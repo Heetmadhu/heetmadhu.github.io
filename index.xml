@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Academic on Academic</title>
+    <link>https://heetmadhu.github.io/</link>
+    <description>Recent content in Academic on Academic</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Oct 2017 00:00:00 +0530</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Gesture Controller</title>
+      <link>https://heetmadhu.github.io/project/internal-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0530</pubDate>
+      
+      <guid>https://heetmadhu.github.io/project/internal-project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stay Alive</title>
+      <link>https://heetmadhu.github.io/project/external-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0530</pubDate>
+      
+      <guid>https://heetmadhu.github.io/project/external-project/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
