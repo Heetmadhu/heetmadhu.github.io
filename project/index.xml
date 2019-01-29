@@ -6,7 +6,7 @@
     <description>Recent content in External Project on Academic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 -0500</lastBuildDate>
     
 	<atom:link href="https://heetmadhu.github.io/project/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,16 +14,25 @@
     <item>
       <title>Gesture Controller</title>
       <link>https://heetmadhu.github.io/project/internal-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0530</pubDate>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 -0500</pubDate>
       
       <guid>https://heetmadhu.github.io/project/internal-project/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Movie Recommender</title>
+      <link>https://heetmadhu.github.io/project/movie-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 -0500</pubDate>
+      
+      <guid>https://heetmadhu.github.io/project/movie-project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Stay Alive</title>
       <link>https://heetmadhu.github.io/project/external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0530</pubDate>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 -0500</pubDate>
       
       <guid>https://heetmadhu.github.io/project/external-project/</guid>
       <description></description>
