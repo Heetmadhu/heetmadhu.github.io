@@ -33,7 +33,228 @@
       <pubDate>Wed, 27 Apr 2016 00:00:00 -0500</pubDate>
       
       <guid>https://heetmadhu.github.io/project/movie-project/</guid>
-      <description></description>
+      <description>
+
+&lt;h2 id=&#34;project-proposal&#34;&gt;Project Proposal&lt;/h2&gt;
+
+&lt;p&gt;Movie recommender website that will help and will save time of users by suggesting
+movies that they might like according to their search criteria and past rating history.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dataset:&lt;/strong&gt;
+&lt;a href=&#34;https://www.kaggle.com/tmdb/tmdb-movie-metadata&#34; target=&#34;_blank&#34;&gt;TMDB Movie Dataset&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Description:&lt;/strong&gt;
+The dataset comprise of 26 million rating by 2,70,000 users of 45,000
+movies. It also includes language, budget, genres, popularity, revenue etc.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Features&lt;/strong&gt;
+* Provide movie suggestions according user’s input.
+* Provide movie suggestions by their past history.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Similar Applications:&lt;/strong&gt;
+* &lt;a href=&#34;https://www.primevideo.com/region/eu&#34; target=&#34;_blank&#34;&gt;Amazon Prime&lt;/a&gt;
+* &lt;a href=&#34;https://www.netflix.com/browse&#34; target=&#34;_blank&#34;&gt;Netflix&lt;/a&gt;
+* &lt;a href=&#34;https://movix.ai/discover/t7715!,m1531!&#34; target=&#34;_blank&#34;&gt;Movix&lt;/a&gt;
+* &lt;a href=&#34;https://www.youtube.com/&#34; target=&#34;_blank&#34;&gt;Youtube&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt;
+People often spend time wasting in the search of movies that they want
+to watch due to availability of too much options. Movie Recommendation System
+will help users to find movies accordingly user’s search keywords and similar movies
+which they liked before. This application will save user’s time and efforts in searching
+process.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Initial Sketch&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://heetmadhu.github.io/img/login.JPG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Login Page Design&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://heetmadhu.github.io/img/search.JPG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Search Page Design&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://heetmadhu.github.io/img/search_resuslt.JPG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Search Result Page Design&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Design Sketch&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://heetmadhu.github.io/img/search_v2.JPG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Search Page Design&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://heetmadhu.github.io/img/search_results_v2.jpg&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Search Results&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://heetmadhu.github.io/img/Classify.JPG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Classification&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://heetmadhu.github.io/img/Classification_Result.JPG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Classification Results&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://heetmadhu.github.io/img/Recommendation.JPG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Recommendation&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://heetmadhu.github.io/img/Recommendation_Result.JPG&#34; /&gt;
+
+
+
+&lt;figcaption data-pre=&#34;Figure &#34; data-post=&#34;:&#34; &gt;
+  &lt;h4&gt;Recommendation Results&lt;/h4&gt;
+  
+&lt;/figcaption&gt;
+
+&lt;/figure&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;report&#34;&gt;Report&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Text Extraction&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Objective of this project is to use text data of movies to calculate inverted term frequency and
+use that to find similarity between user’s search query and movies.
+In the TMDB Movies dataset, there are many text fields such as movie title, tagline, overview,
+keywords, genres, production companies, cast, crew, languages, etc.
+Title, tagline, overview are in string format and can be used directly, but fields like keywords,
+genres, production companies are in list of dict format so first I have converted string to literal
+structure then I have extracted only necessary fields such as name.
+Other source of information are casts and characters of movies, I can use information about
+actors and role they played. Similarly from crew information I have only extracted name of
+director, producer, writer which is good source of information.
+In the end I have constructed document for each movies that contains all the text data
+mentioned above.
+For better results I have applied snowball stemmer&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Search Result&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;To find similarity between search query and movies first I have generated word vector for each
+movie and using word vectors inverted term frequency was calculated.
+Now for new query we need to generate word vector of query and then calculate inverted term
+frequency. After that we need to calculate cosine similarity between inverted term frequency
+of query and of each movie. Then we will find top results whose cosine similarity is maximum.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.kaggle.com/rounakbanik/the-movies-dataset/kernels&#34; target=&#34;_blank&#34;&gt;https://www.kaggle.com/rounakbanik/the-movies-dataset/kernels&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://scikit-learn.org/stable/documentation.html&#34; target=&#34;_blank&#34;&gt;https://scikit-learn.org/stable/documentation.html&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>

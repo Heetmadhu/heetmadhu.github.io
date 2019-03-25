@@ -370,8 +370,6 @@
 
 <div class="btn-links mb-3">
   
-  <a class="btn btn-outline-primary my-1" href="https://heetmadhu.pythonanywhere.com/" target="_blank" rel="noopener">Go to Project Site</a>
-  
   
 
 
@@ -569,8 +567,6 @@
 
 <div class="btn-links mb-3">
   
-  <a class="btn btn-outline-primary my-1" href="https://heetmadhu.pythonanywhere.com/" target="_blank" rel="noopener">Go to Project Site</a>
-  
   
 
 
@@ -623,6 +619,227 @@
 
     <div class="article-style" itemprop="articleBody">
       
+
+<h2 id="project-proposal">Project Proposal</h2>
+
+<p>Movie recommender website that will help and will save time of users by suggesting
+movies that they might like according to their search criteria and past rating history.</p>
+
+<p><strong>Dataset:</strong>
+<a href="https://www.kaggle.com/tmdb/tmdb-movie-metadata" target="_blank">TMDB Movie Dataset</a></p>
+
+<p><strong>Description:</strong>
+The dataset comprise of 26 million rating by 2,70,000 users of 45,000
+movies. It also includes language, budget, genres, popularity, revenue etc.</p>
+
+<p><strong>Features</strong>
+* Provide movie suggestions according user’s input.
+* Provide movie suggestions by their past history.</p>
+
+<p><strong>Similar Applications:</strong>
+* <a href="https://www.primevideo.com/region/eu" target="_blank">Amazon Prime</a>
+* <a href="https://www.netflix.com/browse" target="_blank">Netflix</a>
+* <a href="https://movix.ai/discover/t7715!,m1531!" target="_blank">Movix</a>
+* <a href="https://www.youtube.com/" target="_blank">Youtube</a></p>
+
+<p><strong>Objective:</strong>
+People often spend time wasting in the search of movies that they want
+to watch due to availability of too much options. Movie Recommendation System
+will help users to find movies accordingly user’s search keywords and similar movies
+which they liked before. This application will save user’s time and efforts in searching
+process.</p>
+
+<p><strong>Initial Sketch</strong></p>
+
+<p>
+
+
+  
+
+<figure>
+
+<img src="/img/login.JPG" />
+
+
+
+<figcaption data-pre="Figure " data-post=":" >
+  <h4>Login Page Design</h4>
+  
+</figcaption>
+
+</figure>
+
+
+
+  
+
+<figure>
+
+<img src="/img/search.JPG" />
+
+
+
+<figcaption data-pre="Figure " data-post=":" >
+  <h4>Search Page Design</h4>
+  
+</figcaption>
+
+</figure>
+
+
+
+  
+
+<figure>
+
+<img src="/img/search_resuslt.JPG" />
+
+
+
+<figcaption data-pre="Figure " data-post=":" >
+  <h4>Search Result Page Design</h4>
+  
+</figcaption>
+
+</figure></p>
+
+<p><strong>Design Sketch</strong></p>
+
+<p>
+
+
+  
+
+<figure>
+
+<img src="/img/search_v2.JPG" />
+
+
+
+<figcaption data-pre="Figure " data-post=":" >
+  <h4>Search Page Design</h4>
+  
+</figcaption>
+
+</figure>
+
+
+
+  
+
+<figure>
+
+<img src="/img/search_results_v2.jpg" />
+
+
+
+<figcaption data-pre="Figure " data-post=":" >
+  <h4>Search Results</h4>
+  
+</figcaption>
+
+</figure>
+
+
+
+  
+
+<figure>
+
+<img src="/img/Classify.JPG" />
+
+
+
+<figcaption data-pre="Figure " data-post=":" >
+  <h4>Classification</h4>
+  
+</figcaption>
+
+</figure>
+
+
+
+  
+
+<figure>
+
+<img src="/img/Classification_Result.JPG" />
+
+
+
+<figcaption data-pre="Figure " data-post=":" >
+  <h4>Classification Results</h4>
+  
+</figcaption>
+
+</figure>
+
+
+
+  
+
+<figure>
+
+<img src="/img/Recommendation.JPG" />
+
+
+
+<figcaption data-pre="Figure " data-post=":" >
+  <h4>Recommendation</h4>
+  
+</figcaption>
+
+</figure>
+
+
+
+  
+
+<figure>
+
+<img src="/img/Recommendation_Result.JPG" />
+
+
+
+<figcaption data-pre="Figure " data-post=":" >
+  <h4>Recommendation Results</h4>
+  
+</figcaption>
+
+</figure></p>
+
+<h2 id="report">Report</h2>
+
+<p><strong>Text Extraction</strong></p>
+
+<p>Objective of this project is to use text data of movies to calculate inverted term frequency and
+use that to find similarity between user’s search query and movies.
+In the TMDB Movies dataset, there are many text fields such as movie title, tagline, overview,
+keywords, genres, production companies, cast, crew, languages, etc.
+Title, tagline, overview are in string format and can be used directly, but fields like keywords,
+genres, production companies are in list of dict format so first I have converted string to literal
+structure then I have extracted only necessary fields such as name.
+Other source of information are casts and characters of movies, I can use information about
+actors and role they played. Similarly from crew information I have only extracted name of
+director, producer, writer which is good source of information.
+In the end I have constructed document for each movies that contains all the text data
+mentioned above.
+For better results I have applied snowball stemmer</p>
+
+<p><strong>Search Result</strong></p>
+
+<p>To find similarity between search query and movies first I have generated word vector for each
+movie and using word vectors inverted term frequency was calculated.
+Now for new query we need to generate word vector of query and then calculate inverted term
+frequency. After that we need to calculate cosine similarity between inverted term frequency
+of query and of each movie. Then we will find top results whose cosine similarity is maximum.</p>
+
+<p><strong>References</strong></p>
+
+<p><a href="https://www.kaggle.com/rounakbanik/the-movies-dataset/kernels" target="_blank">https://www.kaggle.com/rounakbanik/the-movies-dataset/kernels</a></p>
+
+<p><a href="https://scikit-learn.org/stable/documentation.html" target="_blank">https://scikit-learn.org/stable/documentation.html</a></p>
+
     </div>
 
     
