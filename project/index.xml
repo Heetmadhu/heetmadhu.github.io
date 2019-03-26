@@ -29,7 +29,8 @@
       <description>Project Proposal Movie recommender website that will help and will save time of users by suggesting movies that they might like according to their search criteria and past rating history.
 Dataset: TMDB Movie Dataset
 Description: The dataset comprise of 26 million rating by 2,70,000 users of 45,000 movies. It also includes language, budget, genres, popularity, revenue etc.
-Features * Provide movie suggestions according user’s input. * Provide movie suggestions by their past history.</description>
+Features
+ Provide movie suggestions according user’s input. Provide movie suggestions by their past history.</description>
     </item>
     
     <item>

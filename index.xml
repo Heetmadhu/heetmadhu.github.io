@@ -47,15 +47,21 @@ movies that they might like according to their search criteria and past rating h
 The dataset comprise of 26 million rating by 2,70,000 users of 45,000
 movies. It also includes language, budget, genres, popularity, revenue etc.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Features&lt;/strong&gt;
-* Provide movie suggestions according user’s input.
-* Provide movie suggestions by their past history.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Features&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Similar Applications:&lt;/strong&gt;
-* &lt;a href=&#34;https://www.primevideo.com/region/eu&#34; target=&#34;_blank&#34;&gt;Amazon Prime&lt;/a&gt;
-* &lt;a href=&#34;https://www.netflix.com/browse&#34; target=&#34;_blank&#34;&gt;Netflix&lt;/a&gt;
-* &lt;a href=&#34;https://movix.ai/discover/t7715!,m1531!&#34; target=&#34;_blank&#34;&gt;Movix&lt;/a&gt;
-* &lt;a href=&#34;https://www.youtube.com/&#34; target=&#34;_blank&#34;&gt;Youtube&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Provide movie suggestions according user’s input.&lt;/li&gt;
+&lt;li&gt;Provide movie suggestions by their past history.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Similar Applications:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.primevideo.com/region/eu&#34; target=&#34;_blank&#34;&gt;Amazon Prime&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.netflix.com/browse&#34; target=&#34;_blank&#34;&gt;Netflix&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://movix.ai/discover/t7715!,m1531!&#34; target=&#34;_blank&#34;&gt;Movix&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/&#34; target=&#34;_blank&#34;&gt;Youtube&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;&lt;strong&gt;Objective:&lt;/strong&gt;
 People often spend time wasting in the search of movies that they want
@@ -144,7 +150,7 @@ process.&lt;/p&gt;
 
 &lt;figure&gt;
 
-&lt;img src=&#34;https://heetmadhu.github.io/img/search_results_v2.jpg&#34; /&gt;
+&lt;img src=&#34;https://heetmadhu.github.io/img/Search_results_v2.JPG&#34; /&gt;
 
 
 
