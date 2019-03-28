@@ -245,7 +245,7 @@ actors and role they played. Similarly from crew information I have only extract
 director, producer, writer which is good source of information.
 In the end I have constructed document for each movies that contains all the text data
 mentioned above.
-For better results I have applied snowball stemmer&lt;/p&gt;
+For better results I have applied snowball stemmer.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Search Result&lt;/strong&gt;&lt;/p&gt;
 
@@ -257,9 +257,15 @@ of query and of each movie. Then we will find top results whose cosine similarit
 
 &lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://www.kaggle.com/rounakbanik/the-movies-dataset/kernels&#34; target=&#34;_blank&#34;&gt;https://www.kaggle.com/rounakbanik/the-movies-dataset/kernels&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.kaggle.com/rounakbanik/the-movies-dataset/kernels&#34; target=&#34;_blank&#34;&gt;https://www.kaggle.com/rounakbanik/the-movies-dataset/kernels&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://scikit-learn.org/stable/documentation.html&#34; target=&#34;_blank&#34;&gt;https://scikit-learn.org/stable/documentation.html&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://scikit-learn.org/stable/documentation.html&#34; target=&#34;_blank&#34;&gt;https://scikit-learn.org/stable/documentation.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://flask.pocoo.org/docs/&#34; target=&#34;_blank&#34;&gt;http://flask.pocoo.org/docs/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://pandas.pydata.org/pandas-docs/stable/&#34; target=&#34;_blank&#34;&gt;http://pandas.pydata.org/pandas-docs/stable/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
