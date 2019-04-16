@@ -11,5 +11,17 @@
 	<atom:link href="https://heetmadhu.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Movie Classification</title>
+      <link>https://heetmadhu.github.io/post/movie-classification/</link>
+      <pubDate>Sun, 14 Apr 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://heetmadhu.github.io/post/movie-classification/</guid>
+      <description>The dataset comprise of 26 million rating by 2,70,000 users of 45,000 movies. It also includes language, budget, genres, popularity, revenue etc.
+Multinomial Naive Bayes Classifier Naive Bayes classification works on probability of individual features within document. For movie classification movie description is data and each word or term in description is feature.
+Formula t1, t2, t3, &amp;hellip; = Terms in data
+P(Genre|[t1, t2, t3, &amp;hellip;]) = P(Genre) * P(t1|Genre) * P(t2|Genre) * P(t3|Genre) * &amp;hellip;</description>
+    </item>
+    
   </channel>
 </rss>

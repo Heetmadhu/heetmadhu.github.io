@@ -10,6 +10,107 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Movie Classification</title>
+      <link>https://heetmadhu.github.io/post/movie-classification/</link>
+      <pubDate>Sun, 14 Apr 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://heetmadhu.github.io/post/movie-classification/</guid>
+      <description>
+
+&lt;p&gt;The dataset comprise of 26 million rating by 2,70,000 users of 45,000
+movies. It also includes language, budget, genres, popularity, revenue etc.&lt;/p&gt;
+
+&lt;h3 id=&#34;multinomial-naive-bayes-classifier&#34;&gt;Multinomial Naive Bayes Classifier&lt;/h3&gt;
+
+&lt;p&gt;Naive Bayes classification works on probability of individual features within document. For movie
+classification movie description is data and each word or term in description is feature.&lt;/p&gt;
+
+&lt;h2 id=&#34;formula&#34;&gt;Formula&lt;/h2&gt;
+
+&lt;p&gt;t1, t2, t3, &amp;hellip; = Terms in data&lt;/p&gt;
+
+&lt;p&gt;P(Genre|[t1, t2, t3, &amp;hellip;]) = P(Genre) * P(t1|Genre) * P(t2|Genre) * P(t3|Genre) * &amp;hellip;&lt;/p&gt;
+
+&lt;h3 id=&#34;genres&#34;&gt;Genres&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Comedy&lt;/li&gt;
+&lt;li&gt;Action&lt;/li&gt;
+&lt;li&gt;Animation&lt;/li&gt;
+&lt;li&gt;Romance&lt;/li&gt;
+&lt;li&gt;Adventure&lt;/li&gt;
+&lt;li&gt;Horror&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;multilabel-classification&#34;&gt;Multilabel Classification&lt;/h3&gt;
+
+&lt;p&gt;Movies can belongs to many classes such as an animation movie can be comedy as well. Multilabel classification
+is little bit triky. The model should return multiple genres. Following are the few techniques I have used.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. Top Results&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In top result technique it returns top n genres which has highest probability.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Pros:&lt;/em&gt;&lt;/strong&gt; Easy and fast.
+&lt;strong&gt;&lt;em&gt;Cons:&lt;/em&gt;&lt;/strong&gt; In most cases movies does not belongs to exactly n genres, it might belongs to less than or greater that n genres.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2. Threshold&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In threshold it returns genres which has probability greater than threshold. We can find good threshold value by applying and evaluating different values.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Cons:&lt;/em&gt;&lt;/strong&gt; In naive bayes with text the range of probability changes with the number of terms in document. For example for one test case probability for genres might between 1.0e-1 to 1.0e-5 and for other it might be between 1.0e-10 to 1.0e-20 so there might be cases when it classify to all genres and ther might be case where it does not classify to any genre as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3. Mean&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In this tehnique it returns the geners which has higher probability than other genres. For movie it first calculate probability using naive bayes theorem than it perform log and find mean of each genres, then it will return genres which has higher value than mean. In addition it has one variable which is muliplied by mean while comparing with each genre&amp;rsquo;s value and we can find good value by applying different values in this case we can use F1 Score and evaluate on validation data.
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://heetmadhu.github.io/img/threshold_for_mean_f1_score_v2.JPG&#34; /&gt;
+
+
+&lt;/figure&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;challenges&#34;&gt;Challenges&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Accuracy&lt;/strong&gt;
+Improving accuracy was major challenge for this project. Following are the techniques used to improve accuracy.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Stopwords&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Stop words are the words which does not play significant role in solving problem such as &amp;ldquo;the&amp;rdquo;, &amp;ldquo;a&amp;rdquo;, &amp;ldquo;this&amp;rdquo;, etc. These words does not give any clue about genre and also these words repeats very much and that creates problem in classification.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Accuracy with stopwords&lt;/em&gt;:&lt;/strong&gt; 0.5024773649566582&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Accuracy without stopwords&lt;/em&gt;:&lt;/strong&gt; 0.5178779592087157&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Lemmatization&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Lemmatization is a process of finding root word for example &amp;ldquo;having&amp;rdquo; word is converted into &amp;ldquo;have&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Accuracy after applying lemmatization:&lt;/em&gt;&lt;/strong&gt; 0.527629565354579&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://nlp.stanford.edu/IR-book/pdf/13bayes.pdf&#34; target=&#34;_blank&#34;&gt;https://nlp.stanford.edu/IR-book/pdf/13bayes.pdf&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://docs.python.org/2/library/collections.html&#34; target=&#34;_blank&#34;&gt;https://docs.python.org/2/library/collections.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://pandas.pydata.org/pandas-docs/stable/&#34; target=&#34;_blank&#34;&gt;http://pandas.pydata.org/pandas-docs/stable/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Gesture Controller</title>
       <link>https://heetmadhu.github.io/project/internal-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 -0500</pubDate>
