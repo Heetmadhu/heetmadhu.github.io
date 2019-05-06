@@ -17,10 +17,31 @@
       <pubDate>Sun, 14 Apr 2019 00:00:00 -0500</pubDate>
       
       <guid>https://heetmadhu.github.io/post/movie-classification/</guid>
-      <description>The dataset comprise of 26 million rating by 2,70,000 users of 45,000 movies. It also includes language, budget, genres, popularity, revenue etc.
-Multinomial Naive Bayes Classifier Naive Bayes classification works on probability of individual features within document. For movie classification movie description is data and each word or term in description is feature.
+      <description>Multinomial Naive Bayes Classifier Naive Bayes classification works on probability of individual features within document. For movie classification movie description is data and each word or term in description is feature.
 Formula t1, t2, t3, &amp;hellip; = Terms in data
-P(Genre|[t1, t2, t3, &amp;hellip;]) = P(Genre) * P(t1|Genre) * P(t2|Genre) * P(t3|Genre) * &amp;hellip;</description>
+P(Genre|[t1, t2, t3, &amp;hellip;]) = P(Genre) * P(t1|Genre) * P(t2|Genre) * P(t3|Genre) * &amp;hellip;
+Genres  Comedy Action Animation Romance Adventure Horror  Multilabel Classification Movies can belongs to many classes such as an animation movie can be comedy as well.</description>
+    </item>
+    
+    <item>
+      <title>Movie Recommender</title>
+      <link>https://heetmadhu.github.io/post/movie-recommender/</link>
+      <pubDate>Sun, 14 Apr 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://heetmadhu.github.io/post/movie-recommender/</guid>
+      <description>Item Based Collaborative Filtering Recommender In item based collaborative filtering similarity between item&amp;rsquo;s are used to recommend items to users. In this method if user is looking for item or has liked any item than similar items are recommended to that uers. We use cosine similarity between items to find similarity.
+Formula for cosine similarity  Tf-idf In this movie recommendation it uses tf-idf to find similarity between movies.</description>
+    </item>
+    
+    <item>
+      <title>Movie Search</title>
+      <link>https://heetmadhu.github.io/post/movie-search/</link>
+      <pubDate>Sun, 14 Apr 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://heetmadhu.github.io/post/movie-search/</guid>
+      <description>Term Frequency (tf) Term-Frequency(df) of term t for document d is the number of term frequency in the documents.
+Inverse Document Frequency Inverse Document Frequency(idf) is defined by following equation where N is the total documents having term t and df is the term frequncy for document d.
+ Term Frequency- Inverted Document Frequency Term Frequency(df) and Inverted Document Frequency(idf) is combined to produce composite weight for each term and in each document using following equation.</description>
     </item>
     
   </channel>

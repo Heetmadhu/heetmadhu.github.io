@@ -358,7 +358,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    3 min read
+    2 min read
   </span>
   
 
@@ -477,7 +477,7 @@
   
     
   
-  <a class="btn btn-outline-primary my-1 mr-1" href="https://movie-recommendation-235802.appspot.com/classify" target="_blank" rel="noopener">
+  <a class="btn btn-outline-primary my-1 mr-1" href="https://movie-recommender-239618.appspot.com/classify" target="_blank" rel="noopener">
     
     website
   </a>
@@ -495,9 +495,6 @@
 
     <div class="article-style" itemprop="articleBody">
       
-
-<p>The dataset comprise of 26 million rating by 2,70,000 users of 45,000
-movies. It also includes language, budget, genres, popularity, revenue etc.</p>
 
 <h3 id="multinomial-naive-bayes-classifier">Multinomial Naive Bayes Classifier</h3>
 
@@ -536,6 +533,18 @@ is little bit triky. The model should return multiple genres. Following are the 
 <p><strong>2. Threshold</strong></p>
 
 <p>In threshold it returns genres which has probability greater than threshold. We can find good threshold value by applying and evaluating different values.</p>
+
+
+
+
+  
+
+<figure>
+
+<img src="/img/top_k.JPG" />
+
+
+</figure>
 
 <p><strong><em>Cons:</em></strong> In naive bayes with text the range of probability changes with the number of terms in document. For example for one test case probability for genres might between 1.0e-1 to 1.0e-5 and for other it might be between 1.0e-10 to 1.0e-20 so there might be cases when it classify to all genres and ther might be case where it does not classify to any genre as well.</p>
 
@@ -584,7 +593,7 @@ Improving accuracy was major challenge for this project. Following are the techn
 
 <li><p><a href="https://docs.python.org/2/library/collections.html" target="_blank">https://docs.python.org/2/library/collections.html</a></p></li>
 
-<li><p><a href="http://pandas.pydata.org/pandas-docs/stable/" target="_blank">http://pandas.pydata.org/pandas-docs/stable/</a></p></li>
+<li><p><a href="https://www.numpy.org/devdocs/" target="_blank">https://www.numpy.org/devdocs/</a></p></li>
 </ul>
 
     </div>

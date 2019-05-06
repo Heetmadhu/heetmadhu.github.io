@@ -17,9 +17,6 @@
       <guid>https://heetmadhu.github.io/post/movie-classification/</guid>
       <description>
 
-&lt;p&gt;The dataset comprise of 26 million rating by 2,70,000 users of 45,000
-movies. It also includes language, budget, genres, popularity, revenue etc.&lt;/p&gt;
-
 &lt;h3 id=&#34;multinomial-naive-bayes-classifier&#34;&gt;Multinomial Naive Bayes Classifier&lt;/h3&gt;
 
 &lt;p&gt;Naive Bayes classification works on probability of individual features within document. For movie
@@ -57,6 +54,18 @@ is little bit triky. The model should return multiple genres. Following are the 
 &lt;p&gt;&lt;strong&gt;2. Threshold&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;In threshold it returns genres which has probability greater than threshold. We can find good threshold value by applying and evaluating different values.&lt;/p&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://heetmadhu.github.io/img/top_k.JPG&#34; /&gt;
+
+
+&lt;/figure&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Cons:&lt;/em&gt;&lt;/strong&gt; In naive bayes with text the range of probability changes with the number of terms in document. For example for one test case probability for genres might between 1.0e-1 to 1.0e-5 and for other it might be between 1.0e-10 to 1.0e-20 so there might be cases when it classify to all genres and ther might be case where it does not classify to any genre as well.&lt;/p&gt;
 
@@ -104,6 +113,124 @@ Improving accuracy was major challenge for this project. Following are the techn
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://nlp.stanford.edu/IR-book/pdf/13bayes.pdf&#34; target=&#34;_blank&#34;&gt;https://nlp.stanford.edu/IR-book/pdf/13bayes.pdf&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://docs.python.org/2/library/collections.html&#34; target=&#34;_blank&#34;&gt;https://docs.python.org/2/library/collections.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.numpy.org/devdocs/&#34; target=&#34;_blank&#34;&gt;https://www.numpy.org/devdocs/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Movie Recommender</title>
+      <link>https://heetmadhu.github.io/post/movie-recommender/</link>
+      <pubDate>Sun, 14 Apr 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://heetmadhu.github.io/post/movie-recommender/</guid>
+      <description>
+
+&lt;h3 id=&#34;item-based-collaborative-filtering-recommender&#34;&gt;Item Based Collaborative Filtering Recommender&lt;/h3&gt;
+
+&lt;p&gt;In item based collaborative filtering similarity between item&amp;rsquo;s are used to recommend items to users. In this method if user is looking for item or has liked any item than similar items are recommended to that uers. We use cosine similarity between items to find similarity.&lt;/p&gt;
+
+&lt;h2 id=&#34;formula-for-cosine-similarity&#34;&gt;Formula for cosine similarity&lt;/h2&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://heetmadhu.github.io/img/cosine_equation.JPG&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;tf-idf&#34;&gt;Tf-idf&lt;/h2&gt;
+
+&lt;p&gt;In this movie recommendation it uses tf-idf to find similarity between movies. Cosine similarity between user&amp;rsquo;s selected movie to all other movies are calculted and top 20 results are shown to the users.&lt;/p&gt;
+
+&lt;h3 id=&#34;challenges&#34;&gt;Challenges&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Time Consuming&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;To calculate cosine similarity of a movie to all movies for every new movie selection is very inefficient so instead of calculating cosine similarity at runtime we can calculate and cosine similarity of all movies to all movies before hosting and can use that matrix at runtime that will not take too much time.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.ics.uci.edu/~welling/teaching/CS77Bwinter12/presentations/course_Ricci/13-Item-to-Item-Matrix-CF.pdf&#34; target=&#34;_blank&#34;&gt;https://www.ics.uci.edu/~welling/teaching/CS77Bwinter12/presentations/course_Ricci/13-Item-to-Item-Matrix-CF.pdf&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://nlp.stanford.edu/IR-book/pdf/06vect.pdf&#34; target=&#34;_blank&#34;&gt;https://nlp.stanford.edu/IR-book/pdf/06vect.pdf&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Movie Search</title>
+      <link>https://heetmadhu.github.io/post/movie-search/</link>
+      <pubDate>Sun, 14 Apr 2019 00:00:00 -0500</pubDate>
+      
+      <guid>https://heetmadhu.github.io/post/movie-search/</guid>
+      <description>
+
+&lt;h2 id=&#34;term-frequency-tf&#34;&gt;Term Frequency (tf)&lt;/h2&gt;
+
+&lt;p&gt;Term-Frequency(df) of term t for document d is the number of term frequency in the documents.&lt;/p&gt;
+
+&lt;h2 id=&#34;inverse-document-frequency&#34;&gt;Inverse Document Frequency&lt;/h2&gt;
+
+&lt;p&gt;Inverse Document Frequency(idf) is defined by following equation where N is the total documents having term t and df is the term frequncy for document d.&lt;/p&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://heetmadhu.github.io/img/idf.JPG&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;term-frequency-inverted-document-frequency&#34;&gt;Term Frequency- Inverted Document Frequency&lt;/h2&gt;
+
+&lt;p&gt;Term Frequency(df) and Inverted Document Frequency(idf) is combined to produce composite weight for each term and in each document using following equation.&lt;/p&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://heetmadhu.github.io/img/tfidf.JPG&#34; /&gt;
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;similarity&#34;&gt;Similarity&lt;/h2&gt;
+
+&lt;p&gt;To find similarity between search query and movies first I have generated word vector for each
+movie and using word vectors inverted term frequency was calculated.
+Now for new query we need to generate word vector of query and then calculate inverted term
+frequency. After that we need to calculate cosine similarity between inverted term frequency
+of query and of each movie. Then we will find top results whose cosine similarity is maximum.&lt;/p&gt;
+
+&lt;h3 id=&#34;challenges&#34;&gt;Challenges&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Efficiency&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;To implement function to calculate tf-idf for individual documents and terms is very resouce consuming process and to implement in efficient way is very important. I have tried different algorithms to improve time taken by functions. Initially it was taking around 2 minutes to calculate all the values and after imroving code it just take around 30 seconds.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.kaggle.com/rounakbanik/the-movies-dataset/kernels&#34; target=&#34;_blank&#34;&gt;https://www.kaggle.com/rounakbanik/the-movies-dataset/kernels&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://nlp.stanford.edu/IR-book/pdf/06vect.pdf&#34; target=&#34;_blank&#34;&gt;https://nlp.stanford.edu/IR-book/pdf/06vect.pdf&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://flask.pocoo.org/docs/&#34; target=&#34;_blank&#34;&gt;http://flask.pocoo.org/docs/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://pandas.pydata.org/pandas-docs/stable/&#34; target=&#34;_blank&#34;&gt;http://pandas.pydata.org/pandas-docs/stable/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
