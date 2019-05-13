@@ -358,7 +358,7 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    2 min read
+    3 min read
   </span>
   
 
@@ -496,6 +496,32 @@
     <div class="article-style" itemprop="articleBody">
       
 
+<h2 id="video">Video</h2>
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+<video controls poster="/img/classify.jpg">
+  <source src="/img/classify.mp4" type="video/mp4">
+</video>
+
 <h3 id="multinomial-naive-bayes-classifier">Multinomial Naive Bayes Classifier</h3>
 
 <p>Naive Bayes classification works on probability of individual features within document. For movie
@@ -527,13 +553,6 @@ is little bit triky. The model should return multiple genres. Following are the 
 
 <p>In top result technique it returns top n genres which has highest probability.</p>
 
-<p><strong><em>Pros:</em></strong> Easy and fast.
-<strong><em>Cons:</em></strong> In most cases movies does not belongs to exactly n genres, it might belongs to less than or greater that n genres.</p>
-
-<p><strong>2. Threshold</strong></p>
-
-<p>In threshold it returns genres which has probability greater than threshold. We can find good threshold value by applying and evaluating different values.</p>
-
 
 
 
@@ -546,11 +565,32 @@ is little bit triky. The model should return multiple genres. Following are the 
 
 </figure>
 
+<p><strong><em>Pros:</em></strong> Easy and fast.</p>
+
+<p><strong><em>Cons:</em></strong> In most cases movies does not belongs to exactly n genres, it might belongs to less than or greater that n genres.</p>
+
+<p><strong>2. Threshold</strong></p>
+
+<p>In threshold it returns genres which has probability greater than threshold. We can find good threshold value by applying and evaluating different values.</p>
+
+
+
+
+  
+
+<figure>
+
+<img src="/img/threshold_f1.JPG" />
+
+
+</figure>
+
 <p><strong><em>Cons:</em></strong> In naive bayes with text the range of probability changes with the number of terms in document. For example for one test case probability for genres might between 1.0e-1 to 1.0e-5 and for other it might be between 1.0e-10 to 1.0e-20 so there might be cases when it classify to all genres and ther might be case where it does not classify to any genre as well.</p>
 
 <p><strong>3. Mean</strong></p>
 
-<p>In this tehnique it returns the geners which has higher probability than other genres. For movie it first calculate probability using naive bayes theorem than it perform log and find mean of each genres, then it will return genres which has higher value than mean. In addition it has one variable which is muliplied by mean while comparing with each genre&rsquo;s value and we can find good value by applying different values in this case we can use F1 Score and evaluate on validation data.
+<p>In this tehnique it returns the geners which has higher probability than other genres. For movie it first calculate probability using naive bayes theorem than it perform log and find mean of each genres, then it will return genres which has higher value than mean. In addition it has one variable which is muliplied by mean while comparing with each genre&rsquo;s value and we can find good value by applying different values in this case we can use F1 Score and evaluate on validation data.</p>
+
 
 
 
@@ -561,12 +601,27 @@ is little bit triky. The model should return multiple genres. Following are the 
 <img src="/img/threshold_for_mean_f1_score_v2.JPG" />
 
 
-</figure></p>
+</figure>
+
+<p><strong>Comparison</strong></p>
+
+
+
+
+  
+
+<figure>
+
+<img src="/img/thresh_top_mean.JPG" />
+
+
+</figure>
 
 <h3 id="challenges">Challenges</h3>
 
-<p><strong>Accuracy</strong>
-Improving accuracy was major challenge for this project. Following are the techniques used to improve accuracy.</p>
+<p><strong>Accuracy</strong></p>
+
+<p>Improving accuracy was major challenge for this project. Following are the techniques used to improve accuracy.</p>
 
 <ul>
 <li><strong>Stopwords</strong></li>
@@ -585,6 +640,16 @@ Improving accuracy was major challenge for this project. Following are the techn
 <p>Lemmatization is a process of finding root word for example &ldquo;having&rdquo; word is converted into &ldquo;have&rdquo;.</p>
 
 <p><strong><em>Accuracy after applying lemmatization:</em></strong> 0.527629565354579</p>
+
+<h3 id="contribution">Contribution</h3>
+
+<p><strong>Multinomial Naive Bayes</strong></p>
+
+<p>Implemented multinomial naive bayes algorithm from scratch and tried to optimize as much as possible for quick response.</p>
+
+<p><strong>Multi Lable Classification</strong></p>
+
+<p>Tried different techniques to get multiple genres as a result such as top k, threshold, and created new method for retrieving multiple genres.</p>
 
 <p><strong>References</strong></p>
 

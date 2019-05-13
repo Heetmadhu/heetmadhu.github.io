@@ -17,6 +17,32 @@
       <guid>https://heetmadhu.github.io/post/movie-classification/</guid>
       <description>
 
+&lt;h2 id=&#34;video&#34;&gt;Video&lt;/h2&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+&lt;video controls poster=&#34;/img/classify.jpg&#34;&gt;
+  &lt;source src=&#34;https://heetmadhu.github.io/img/classify.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+
 &lt;h3 id=&#34;multinomial-naive-bayes-classifier&#34;&gt;Multinomial Naive Bayes Classifier&lt;/h3&gt;
 
 &lt;p&gt;Naive Bayes classification works on probability of individual features within document. For movie
@@ -48,13 +74,6 @@ is little bit triky. The model should return multiple genres. Following are the 
 
 &lt;p&gt;In top result technique it returns top n genres which has highest probability.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;&lt;em&gt;Pros:&lt;/em&gt;&lt;/strong&gt; Easy and fast.
-&lt;strong&gt;&lt;em&gt;Cons:&lt;/em&gt;&lt;/strong&gt; In most cases movies does not belongs to exactly n genres, it might belongs to less than or greater that n genres.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2. Threshold&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;In threshold it returns genres which has probability greater than threshold. We can find good threshold value by applying and evaluating different values.&lt;/p&gt;
-
 
 
 
@@ -67,11 +86,32 @@ is little bit triky. The model should return multiple genres. Following are the 
 
 &lt;/figure&gt;
 
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Pros:&lt;/em&gt;&lt;/strong&gt; Easy and fast.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Cons:&lt;/em&gt;&lt;/strong&gt; In most cases movies does not belongs to exactly n genres, it might belongs to less than or greater that n genres.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2. Threshold&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In threshold it returns genres which has probability greater than threshold. We can find good threshold value by applying and evaluating different values.&lt;/p&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://heetmadhu.github.io/img/threshold_f1.JPG&#34; /&gt;
+
+
+&lt;/figure&gt;
+
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Cons:&lt;/em&gt;&lt;/strong&gt; In naive bayes with text the range of probability changes with the number of terms in document. For example for one test case probability for genres might between 1.0e-1 to 1.0e-5 and for other it might be between 1.0e-10 to 1.0e-20 so there might be cases when it classify to all genres and ther might be case where it does not classify to any genre as well.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;3. Mean&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;In this tehnique it returns the geners which has higher probability than other genres. For movie it first calculate probability using naive bayes theorem than it perform log and find mean of each genres, then it will return genres which has higher value than mean. In addition it has one variable which is muliplied by mean while comparing with each genre&amp;rsquo;s value and we can find good value by applying different values in this case we can use F1 Score and evaluate on validation data.
+&lt;p&gt;In this tehnique it returns the geners which has higher probability than other genres. For movie it first calculate probability using naive bayes theorem than it perform log and find mean of each genres, then it will return genres which has higher value than mean. In addition it has one variable which is muliplied by mean while comparing with each genre&amp;rsquo;s value and we can find good value by applying different values in this case we can use F1 Score and evaluate on validation data.&lt;/p&gt;
+
 
 
 
@@ -82,12 +122,27 @@ is little bit triky. The model should return multiple genres. Following are the 
 &lt;img src=&#34;https://heetmadhu.github.io/img/threshold_for_mean_f1_score_v2.JPG&#34; /&gt;
 
 
-&lt;/figure&gt;&lt;/p&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;strong&gt;Comparison&lt;/strong&gt;&lt;/p&gt;
+
+
+
+
+  
+
+&lt;figure&gt;
+
+&lt;img src=&#34;https://heetmadhu.github.io/img/thresh_top_mean.JPG&#34; /&gt;
+
+
+&lt;/figure&gt;
 
 &lt;h3 id=&#34;challenges&#34;&gt;Challenges&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;Accuracy&lt;/strong&gt;
-Improving accuracy was major challenge for this project. Following are the techniques used to improve accuracy.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Accuracy&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Improving accuracy was major challenge for this project. Following are the techniques used to improve accuracy.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;Stopwords&lt;/strong&gt;&lt;/li&gt;
@@ -106,6 +161,16 @@ Improving accuracy was major challenge for this project. Following are the techn
 &lt;p&gt;Lemmatization is a process of finding root word for example &amp;ldquo;having&amp;rdquo; word is converted into &amp;ldquo;have&amp;rdquo;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;em&gt;Accuracy after applying lemmatization:&lt;/em&gt;&lt;/strong&gt; 0.527629565354579&lt;/p&gt;
+
+&lt;h3 id=&#34;contribution&#34;&gt;Contribution&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Multinomial Naive Bayes&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Implemented multinomial naive bayes algorithm from scratch and tried to optimize as much as possible for quick response.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Multi Lable Classification&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Tried different techniques to get multiple genres as a result such as top k, threshold, and created new method for retrieving multiple genres.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
 
@@ -126,6 +191,32 @@ Improving accuracy was major challenge for this project. Following are the techn
       
       <guid>https://heetmadhu.github.io/post/movie-recommender/</guid>
       <description>
+
+&lt;h2 id=&#34;video&#34;&gt;Video&lt;/h2&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+&lt;video controls &gt;
+  &lt;source src=&#34;https://heetmadhu.github.io/img/recommend.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
 
 &lt;h3 id=&#34;item-based-collaborative-filtering-recommender&#34;&gt;Item Based Collaborative Filtering Recommender&lt;/h3&gt;
 
@@ -173,6 +264,32 @@ Improving accuracy was major challenge for this project. Following are the techn
       <guid>https://heetmadhu.github.io/post/movie-search/</guid>
       <description>
 
+&lt;h2 id=&#34;video&#34;&gt;Video&lt;/h2&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+&lt;video controls poster=&#34;/img/search.jpg&#34;&gt;
+  &lt;source src=&#34;https://heetmadhu.github.io/img/search.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+
 &lt;h2 id=&#34;term-frequency-tf&#34;&gt;Term Frequency (tf)&lt;/h2&gt;
 
 &lt;p&gt;Term-Frequency(df) of term t for document d is the number of term frequency in the documents.&lt;/p&gt;
@@ -209,6 +326,10 @@ Improving accuracy was major challenge for this project. Following are the techn
 
 &lt;/figure&gt;
 
+&lt;h2 id=&#34;stemming&#34;&gt;Stemming&lt;/h2&gt;
+
+&lt;p&gt;Stemming usually refers to a crude heuristic process that chops off the ends of words in the hope of achieving this goal correctly most of the time, and often includes the removal of derivational affixes.&lt;/p&gt;
+
 &lt;h2 id=&#34;similarity&#34;&gt;Similarity&lt;/h2&gt;
 
 &lt;p&gt;To find similarity between search query and movies first I have generated word vector for each
@@ -223,6 +344,12 @@ of query and of each movie. Then we will find top results whose cosine similarit
 
 &lt;p&gt;To implement function to calculate tf-idf for individual documents and terms is very resouce consuming process and to implement in efficient way is very important. I have tried different algorithms to improve time taken by functions. Initially it was taking around 2 minutes to calculate all the values and after imroving code it just take around 30 seconds.&lt;/p&gt;
 
+&lt;h3 id=&#34;contribution&#34;&gt;Contribution&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;TF-IDF&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Previously I was using scikit learn library than for better performance I have implemented all the calculation of tf-idf.&lt;/p&gt;
+
 &lt;p&gt;&lt;strong&gt;References&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
@@ -233,6 +360,8 @@ of query and of each movie. Then we will find top results whose cosine similarit
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://flask.pocoo.org/docs/&#34; target=&#34;_blank&#34;&gt;http://flask.pocoo.org/docs/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://pandas.pydata.org/pandas-docs/stable/&#34; target=&#34;_blank&#34;&gt;http://pandas.pydata.org/pandas-docs/stable/&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html&#34; target=&#34;_blank&#34;&gt;https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

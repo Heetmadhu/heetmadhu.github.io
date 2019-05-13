@@ -496,6 +496,32 @@
     <div class="article-style" itemprop="articleBody">
       
 
+<h2 id="video">Video</h2>
+
+
+
+
+
+  
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+<video controls poster="/img/search.jpg">
+  <source src="/img/search.mp4" type="video/mp4">
+</video>
+
 <h2 id="term-frequency-tf">Term Frequency (tf)</h2>
 
 <p>Term-Frequency(df) of term t for document d is the number of term frequency in the documents.</p>
@@ -532,6 +558,10 @@
 
 </figure>
 
+<h2 id="stemming">Stemming</h2>
+
+<p>Stemming usually refers to a crude heuristic process that chops off the ends of words in the hope of achieving this goal correctly most of the time, and often includes the removal of derivational affixes.</p>
+
 <h2 id="similarity">Similarity</h2>
 
 <p>To find similarity between search query and movies first I have generated word vector for each
@@ -546,6 +576,12 @@ of query and of each movie. Then we will find top results whose cosine similarit
 
 <p>To implement function to calculate tf-idf for individual documents and terms is very resouce consuming process and to implement in efficient way is very important. I have tried different algorithms to improve time taken by functions. Initially it was taking around 2 minutes to calculate all the values and after imroving code it just take around 30 seconds.</p>
 
+<h3 id="contribution">Contribution</h3>
+
+<p><strong>TF-IDF</strong></p>
+
+<p>Previously I was using scikit learn library than for better performance I have implemented all the calculation of tf-idf.</p>
+
 <p><strong>References</strong></p>
 
 <ul>
@@ -556,6 +592,8 @@ of query and of each movie. Then we will find top results whose cosine similarit
 <li><p><a href="http://flask.pocoo.org/docs/" target="_blank">http://flask.pocoo.org/docs/</a></p></li>
 
 <li><p><a href="http://pandas.pydata.org/pandas-docs/stable/" target="_blank">http://pandas.pydata.org/pandas-docs/stable/</a></p></li>
+
+<li><p><a href="https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html" target="_blank">https://nlp.stanford.edu/IR-book/html/htmledition/stemming-and-lemmatization-1.html</a></p></li>
 </ul>
 
     </div>
